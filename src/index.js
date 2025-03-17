@@ -2,7 +2,7 @@ document.getElementById("registerBtn").addEventListener("click", (event) => {
     event.preventDefault();
 
     let fullName = document.getElementById("fullname").value;
-    let email = document.getElementById("email").value.trim().toLowerCase();
+    let email = document.getElementById("email").value;
     let phoneNumber = document.getElementById("phone").value;
     let age = document.getElementById("age").value;
     let dob = document.getElementById("dob").value;
@@ -24,7 +24,7 @@ document.getElementById("registerBtn").addEventListener("click", (event) => {
     let hasError = false; 
 
     if (!fullName) {
-        nameMessage.innerText = "Fill in your name!";
+        nameMessage.innerText = " dont be unfortunate Fill in your name!";
         nameMessage.style.color = "red";
         hasError = true;
     }
@@ -89,7 +89,7 @@ document.getElementById("registerBtn").addEventListener("click", (event) => {
     localStorage.setItem("dob", dob);
     localStorage.setItem("password", password);
 
-    responseMessage.innerText = "Registration successful! Redirecting...";
+    responseMessage.innerText = "Registration successful! Processing...";
     responseMessage.style.color = "green";
 
     

@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        loginResponseMessage.innerText = "Login successful! Redirecting...";
+        loginResponseMessage.innerText = "Login successful! Processing...";
         loginResponseMessage.style.color = "green";
 
         
