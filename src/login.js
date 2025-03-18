@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("loggedInUser", email);
 
         setTimeout(() => {
-            window.location.href = "index.html"; 
+            window.location.href = "https://bankui-eight.vercel.app/"; 
         }, 2000);
     });
 });
